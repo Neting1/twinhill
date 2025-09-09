@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Twinhill Enterprise</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+        /* Additional styles for logo */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            height: 50px;
+            width: auto;
+            margin-right: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 70px;
+            }
+            
+            .logo h1 {
+                font-size: 1.4rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-img {
+                height: 35px;
+            }
+            
+            .logo h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-container">
+                    <img src="pics/company logo.png" alt="Twinhill Enterprise Logo" class="logo-img">
+                    <h1>Twin<span>hill</span> Enterprise</h1>
+                </div>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any inquiries</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Market Street, Adum, Kumasi, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233 24 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@twinhillenterprise.com</p>
+                    <p><i class="fas fa-clock"></i> Monday-Friday: 8:00 AM - 6:00 PM</p>
+                    <p><i class="fas fa-clock"></i> Saturday: 9:00 AM - 4:00 PM</p>
+                    <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+                    
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.917286118211!2d-1.624394!3d6.688596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96c5c8a84ed3%3A0x4777c3e22a55c4e8!2sAdum%2C%20Kumasi!5e0!3m2!1sen!2sgh!4v1686759878905!5m2!1sen!2sgh" width="100%" height="250" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your business hours? <i class="fas fa-chevron-down"></i></h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We are open Monday to Friday from 8:00 AM to 6:00 PM, and on Saturdays from 9:00 AM to 4:00 PM. We are closed on Sundays and public holidays.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer delivery services? <i class="fas fa-chevron-down"></i></h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer delivery services for both retail and wholesale customers. Delivery charges may apply depending on the location and order size.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I become a wholesale partner? <i class="fas fa-chevron-down"></i></h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To become a wholesale partner, please contact our sales team through the contact form or visit our office. We'll guide you through the registration process and discuss pricing options.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept? <i class="fas fa-chevron-down"></i></h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept cash, mobile money transfers, and bank transfers. For established wholesale partners, we also offer credit facilities with approved terms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Twinhill Enterprise</h3>
+                    <p>Your trusted partner for retail and wholesale distribution in Kumasi and beyond.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Retail Sales</a></li>
+                        <li><a href="services.html">Wholesale Distribution</a></li>
+                        <li><a href="services.html">Product Sourcing</a></li>
+                        <li><a href="services.html">Business Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Market Street, Adum, Kumasi, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233 24 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@twinhillenterprise.com</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Twinhill Enterprise. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
