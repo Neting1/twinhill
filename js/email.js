@@ -36,7 +36,7 @@
         const submitBtn = document.getElementById('submitBtn');
         
         if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
+            contactForm.addEventListener('submit', function(e){
                 e.preventDefault();
                 
                 // Show sending status
@@ -50,24 +50,20 @@
                     from_email: document.getElementById('email').value,
                     subject: document.getElementById('subject').value,
                     message: document.getElementById('message').value,
-                    to_email: 'info@twinhillenterprise.com' // Your receiving email
-                };
-                
-                // Send the email using EmailJS
-                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
-                    .then(function(response) {
-                        console.log('SUCCESS!', response.status, response.text);
-                        formStatus.className = 'form-status success';
-                        formStatus.textContent = 'Thank you for your message. We will get back to you soon!';
-                        contactForm.reset();
-                        submitBtn.disabled = false;
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                        formStatus.className = 'form-status error';
-                        formStatus.textContent = 'Sorry, there was an error sending your message. Please try again later or contact us directly at info@twinhillenterprise.com';
-                        submitBtn.disabled = false;
-                    });
+                    to_email: 'xeonsysitenterprise@gmail.com' // Your receiving email
+                    }
             });
+                    
+                // Send the email using EmailJS
+                function sendMail(){
+            let params = {
+                name : document.getElementById("name").value,
+                email : document.getElementById("email").value,
+                subject : document.getElementById("subject").value,
+                message : document.getElementById("message").value
+        }
+
+        emailjs.send("service_olttz89","template_47oet7i",params).then(alert("Message Sent Successfully"))
         }
 
         // FAQ Accordion
@@ -156,4 +152,6 @@
             // Run on scroll and initially
             window.addEventListener('scroll', animateOnScroll);
             animateOnScroll();
-        });
+        }
+        );
+    };
